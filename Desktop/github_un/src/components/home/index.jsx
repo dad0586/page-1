@@ -6,6 +6,7 @@ function Home() {
         <div className="container">
             <div className="home-container">
                 <h1> Hush kelibsiz!!</h1>
+                
             </div>
         </div>
     );
