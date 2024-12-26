@@ -1,16 +1,12 @@
-
+import Header from "./layout/header";
+import Styles from "./assets/styles/main.scss"
 
 
 function App() {
   return (
-   <>
-   
-  <h1>
-    salom
-
-  </h1>
-
-   </>
+    <>
+        <Header />
+    </>
   );
 }
 
