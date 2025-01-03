@@ -1,0 +1,133 @@
+.zeropage {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  .center {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    img {
+      width: 270px;
+    }
+
+    a {
+      z-index: 100;
+    }
+
+    .search {
+      margin-top: -50px;
+      background: white;
+      opacity: 0.7;
+      border-radius: 6px;
+      max-height: 350px; 
+      overflow-y: auto; 
+      width: 700px; 
+
+      .MuiButton-root {
+        background: #008001;
+        border: none;
+        height: 56px;
+        color: white;
+      }
+
+      .MuiTextField-root {
+        width: 100%; 
+        border-radius: 5px;
+
+        input {
+          border-radius: 5px;
+        }
+      }
+
+      
+      .movie-card {
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: space-between; 
+
+        .movie-card {
+          display: flex;
+          align-items: center;
+          margin: 10px;
+          width: 48%; 
+          box-sizing: border-box; 
+
+          img {
+            width: 200px; 
+            height: auto;
+            border-radius: 5px;
+          }
+
+          .titles {
+            margin-left: 10px;
+            h1 {
+              font-size: 16px;
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .below-centr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h6 {
+      color: white;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+      font-size: 20px;
+    }
+
+    button {
+      width: 200px;
+      height: 50px;
+      padding: 8px 16px;
+      background: #008001;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+      border: none;
+      border-radius: 6px;
+
+      a {
+        color: white;
+        font-size: 20px;
+        text-align: center;
+      }
+    }
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+      margin-top: 5%;
+    p {
+      font-size: 16px;
+      line-height: 24px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+      color: #afb8c8;
+      text-align: center;
+    }
+
+    span {
+      line-height: 24px;
+      font-size: 20px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+      color: #7d937d;
+    }
+  }
+}

@@ -1,0 +1,71 @@
+.home {
+  .pagination {
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    .MuiPaginationItem-root {
+      display: flex;
+      align-items: center;
+      color: white;
+      background-color: black;
+      border-radius: 5px;
+      padding: 5px 10px;
+      transition: background-color 0.3s, transform 0.3s;
+
+      &:hover {
+        background-color: #1f2129;
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  .movie {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+
+    .movie-card {
+      position: relative;
+      width: 250px;
+      height: 200px;
+      border-radius: 10px;
+      overflow: hidden;
+      background: #1f2129;
+      transition: transform 0.3s, box-shadow 0.3s;
+
+      &:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      h1 {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        color: white;
+        background: rgba(0, 0, 0, 0.8);
+        font-family: "Segoe UI", Roboto, sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.2;
+        text-align: center;
+        padding: 10px 0;
+        cursor: pointer;
+
+        &:hover {
+          background: #3498db;
+        }
+      }
+    }
+  }
+}

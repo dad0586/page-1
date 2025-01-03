@@ -1,0 +1,108 @@
+// import axios from "axios";
+// import React, { useEffect, useState } from "react";
+// import { useParams } from "react-router-dom";
+
+// function MovieInner() {
+//   const { id } = useParams();
+//   const [data, setData] = useState([]);
+
+//   useEffect(() => {
+//     axios
+//       .get(
+//         `https://api.themoviedb.org/3/movie/${id}?api_key=0c43f3a99dd87115bcb9db112a118c03`
+//       )
+//       .then(function (response) {
+//         setData(response.data);
+//       })
+//       .catch(function (error) {
+//         console.log("Error fetching data:", error);
+//       });
+//   }, [id]);
+
+//   return (
+//     <div>
+//       <h1>{id}</h1>
+//       <h1>{data?.title}</h1>
+//       <img
+//         src={"https://image.tmdb.org/t/p/w500" + data?.backdrop_path}
+//         alt=""
+//       />
+//     </div>
+//   );
+// }
+
+// export default MovieInner;
+
+// second END 
+
+
+
+// import axios from "axios";
+// import React, { useEffect, useState } from "react";
+// import { useParams } from "react-router-dom";
+
+// function MovieInner() {
+//   const { id } = useParams();
+//   const [data, setData] = useState({});
+//   const [trailer, setTrailer] = useState(null);
+
+//   useEffect(() => {
+//     // Fetch movie details
+//     axios
+//       .get(
+//         `https://api.themoviedb.org/3/movie/${id}?api_key=0c43f3a99dd87115bcb9db112a118c03`
+//       )
+//       .then((response) => {
+//         setData(response.data);
+//       })
+//       .catch((error) => {
+//         console.log("Error fetching data:", error);
+//       });
+
+//     // Fetch movie trailer
+//     axios
+//       .get(
+//         `https://api.themoviedb.org/3/movie/${id}/videos?api_key=0c43f3a99dd87115bcb9db112a118c03`
+//       )
+//       .then((response) => {
+//         const videos = response.data.results;
+//         const youtubeTrailer = videos.find(
+//           (video) =>
+//             video.site === "YouTube" && video.type === "Trailer"
+//         );
+//         setTrailer(youtubeTrailer ? youtubeTrailer.key : null);
+//       })
+//       .catch((error) => {
+//         console.log("Error fetching trailer:", error);
+//       });
+//   }, [id]);
+
+//   return (
+//     <div>
+//       <h1>{data?.title}</h1>
+//       <img
+//         src={"https://image.tmdb.org/t/p/w500" + data?.backdrop_path}
+//         alt={data?.title}
+//       />
+//       {trailer && (
+//         <div>
+//           <h2>Watch the Trailer</h2>
+//           <iframe
+//             width="560"
+//             height="315"
+//             src={`https://www.youtube.com/embed/${trailer}`}
+//             title="YouTube trailer"
+//             frameBorder="0"
+//             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+//             allowFullScreen
+//           ></iframe>
+//         </div>
+//       )}
+//     </div>
+//   );
+// }
+
+// export default MovieInner;
+
+
+// third end 
