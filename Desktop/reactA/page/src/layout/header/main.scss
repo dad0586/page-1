@@ -1,0 +1,20 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3%;
+}
+
+.header__link {
+    display: flex;
+    gap: 20%;
+    a {
+        font-family: Plus Jakarta Sans;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 30px;
+        letter-spacing: -0.02em;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+    }
+}

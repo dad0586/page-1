@@ -1,17 +1,18 @@
 import Header from "./layout/header";
-import Styles from "./assets/styles/main.scss"
+import Styles from "./assets/style/main.scss"
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/home";
+import Category from "./pages/category";
 
 
 function App() {
   return (
     <>
         <Header />
-        <h1>
-          a
-
-          
-          a
-          </h1>
+        <Routes>
+          <Route path="/" element={<Home/>} />
+          <Route path="/category" element={<Category/>} />
+        </Routes>
     </>
   );
 }
