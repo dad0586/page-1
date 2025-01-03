@@ -4,7 +4,7 @@ const Card = () => {
     return (
         <>
             <div className="card">
-                <div>
+                <div className="card-car-name">
                     <h1>
                         Car name
                     </h1>
@@ -12,17 +12,17 @@ const Card = () => {
 
                     </p>
                 </div>
-                <div>
+                <div className="card-car__img">
                     <img src="" alt="Car image" />
                 </div>
-                <div>
+                <div className="card-car__spesification">
                     <div>90L</div>
                     <div>Manual</div>
                     <div>People</div>
                 </div>
-                <div>
-                    <div>Prise: / <span>day</span> </div>
-                    <div>
+                <div className="card-car__buy">
+                    <div className="card-car__prise">Prise: /<span>day</span> </div>
+                    <div className="card-car_btn">
                         <button>Rent Now</button>
                     </div>
                 </div>

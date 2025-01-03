@@ -1,5 +1,5 @@
 import Card from "../../components/card";
-
+import "./main.scss"
 const Home = () => {
     return (
         <>
